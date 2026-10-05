@@ -53,11 +53,11 @@ def _resolve_atri(ass: Assignment, scope: Scope, erros: list[SemanticDiagnostic]
     _resolve_node(ass.target, scope, erros)
     _resolve_node(ass.value)
 
-def _resolve_id(id: IdentifierExpr, scope: Scope, erros: list[SemanticDiagnostic])->None:
+'''def _resolve_id(id: IdentifierExpr, scope: Scope, erros: list[SemanticDiagnostic])->None:
     cur = scope
     sim = None
     while not cur:
-        if id.name in cur
+        if id.name in cur'''
 def _resolve_node(node, scope: Scope, erros: list[SemanticDiagnostic])->None:
     if isinstance(node,Block):
         bloc_scop = Scope(parent = scope)
